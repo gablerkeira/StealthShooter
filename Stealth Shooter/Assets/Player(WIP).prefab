@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432999414387231350}
-  m_LocalRotation: {x: 0.11771069, y: 0, z: 0, w: 0.99304795}
-  m_LocalPosition: {x: -0.09, y: 1.28, z: -1.82}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.024, y: 0.376, z: 0.387}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1432999415808705425}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 13.52, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1432999414387231344
 Camera:
   m_ObjectHideFlags: 0
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 1432999415808705429}
   - component: {fileID: 1432999415808705434}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Player(WIP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -190,6 +190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   crouchSpeed: 5
+  crouchRotateSpeed: 0
   rotateSpeed: 75
   rb: {fileID: 1432999415808705434}
   playerAnimator: {fileID: 0}
