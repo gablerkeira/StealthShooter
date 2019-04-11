@@ -20,8 +20,7 @@ public class Player_Movement : MonoBehaviour
 
     //Vector3 crouchDown = new Vector3(0, -.5f, 0);
     Vector3 totalForce = Vector3.zero;
-    bool crouching = false;
-    Camera mainCamera;
+    public bool crouching = false;
     public Action OnFire = delegate { };
 
     void Start()
