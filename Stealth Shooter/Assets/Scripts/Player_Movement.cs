@@ -23,17 +23,21 @@ public class Player_Movement : MonoBehaviour
     public bool crouching = false;
     public Action OnFire = delegate { };
 
+    public GameObject mainCamera;
+    public GameObject tpCamera;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        mainCamera.gameObject.SetActive(true);
+        tpCamera.gameObject.SetActive(false);
     }
 
     void Update()
     {
         totalForce = Vector3.zero;
-
-        totalForce += transform.right * Input.GetAxis("Horizontal") * walkSpeed;
 
         if (Input.GetKey(KeyCode.S) && crouching == false)
         {
@@ -59,10 +63,18 @@ public class Player_Movement : MonoBehaviour
         {
             totalForce += transform.forward * Input.GetAxis("Vertical") * crouchSpeed;
             transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * crouchRotateSpeed);
+            totalForce += transform.right * Input.GetAxis("Horizontal") * crouchSpeed;
+
+            mainCamera.gameObject.SetActive(false);
+            tpCamera.gameObject.SetActive(true);
         }
         else
         {
             transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * rotateSpeed);
+            totalForce += transform.right * Input.GetAxis("Horizontal") * walkSpeed;
+
+            mainCamera.gameObject.SetActive(true);
+            tpCamera.gameObject.SetActive(false);
         }
 
         transform.position += totalForce * Time.deltaTime;
