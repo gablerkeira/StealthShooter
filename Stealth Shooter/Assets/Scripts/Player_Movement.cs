@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
 {
+    #region Walking Variables
     [Tooltip("Regular walking speed")]
     public float walkSpeed;
     [Tooltip("Walking speed while crouched")]
@@ -17,13 +18,15 @@ public class Player_Movement : MonoBehaviour
     public Rigidbody rb;
     [Tooltip("Player's animator")]
     public Animator playerAnimator;
+    #endregion
 
-    //Vector3 crouchDown = new Vector3(0, -.5f, 0);
     Vector3 totalForce = Vector3.zero;
-    public bool crouching = false;
+    bool crouching = false;
     public Action OnFire = delegate { };
 
+    [Tooltip("First Person Camera View")]
     public GameObject mainCamera;
+    [Tooltip("Third Person Camera View")]
     public GameObject tpCamera;
 
     void Start()
@@ -39,15 +42,22 @@ public class Player_Movement : MonoBehaviour
     {
         totalForce = Vector3.zero;
 
+        #region Moving Backwards
         if (Input.GetKey(KeyCode.S) && crouching == false)
         {
             totalForce += transform.forward * Input.GetAxis("Vertical") * walkSpeed; 
         }
+        #endregion
+
+        #region Moving Forwards
         if (Input.GetKey(KeyCode.W) && crouching == false)
         {
             totalForce += transform.forward * Input.GetAxis("Vertical") * walkSpeed;
         }
-        else if (Input.GetKeyDown(KeyCode.C))
+        #endregion
+
+        #region Crouching
+        if (Input.GetKeyDown(KeyCode.C))
         {
             if (crouching)
             {
@@ -62,8 +72,9 @@ public class Player_Movement : MonoBehaviour
         if (crouching)
         {
             totalForce += transform.forward * Input.GetAxis("Vertical") * crouchSpeed;
-            transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * crouchRotateSpeed);
             totalForce += transform.right * Input.GetAxis("Horizontal") * crouchSpeed;
+
+            transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * crouchRotateSpeed);
 
             mainCamera.gameObject.SetActive(false);
             tpCamera.gameObject.SetActive(true);
@@ -71,13 +82,16 @@ public class Player_Movement : MonoBehaviour
         else
         {
             transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * rotateSpeed);
+
             totalForce += transform.right * Input.GetAxis("Horizontal") * walkSpeed;
 
             mainCamera.gameObject.SetActive(true);
             tpCamera.gameObject.SetActive(false);
         }
+        #endregion
 
         transform.position += totalForce * Time.deltaTime;
+
         //playerAnimator.SetFloat("Velocity", totalForce.magnitude);
     }
 }
