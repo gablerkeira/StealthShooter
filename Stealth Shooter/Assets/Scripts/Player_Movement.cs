@@ -22,7 +22,6 @@ public class Player_Movement : MonoBehaviour
 
     Vector3 totalForce = Vector3.zero;
     bool crouching = false;
-    bool SneakAnim; //Triston added code!
     public Action OnFire = delegate { };
 
     [Tooltip("First Person Camera View")]
@@ -34,8 +33,8 @@ public class Player_Movement : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        SneakAnim = false; //Triston added code!
-        playerAnimator = gameObject.GetComponent<Animator>(); //Triston added code!
+
+        playerAnimator = gameObject.GetComponent<Animator>(); 
         mainCamera.gameObject.SetActive(true);
         tpCamera.gameObject.SetActive(false);
     }
@@ -56,12 +55,6 @@ public class Player_Movement : MonoBehaviour
         {
             totalForce += transform.forward * Input.GetAxis("Vertical") * walkSpeed;
         }
-
-        /*else if (!Input.GetKey(KeyCode.W) && crouching == true) //Triston added code!
-        {
-            SneakAnim = false; //Triston added code!
-            playerAnimator.SetBool("SneakAnim", false); //Triston added code!
-        } I am a big dumb dumb and this didn't work for some reason! so i'll let you figure it out from here :D*/ //End of Triston added code!
         #endregion
 
         #region Crouching
@@ -86,8 +79,15 @@ public class Player_Movement : MonoBehaviour
 
             mainCamera.gameObject.SetActive(false);
             tpCamera.gameObject.SetActive(true);
-            SneakAnim = true; //Triston added code!
-            playerAnimator.SetBool ("SneakAnim", true); //Triston added code!
+
+            if (Input.anyKey == false)
+            {
+                playerAnimator.SetBool("SneakAnim", false);
+            }
+            else if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+            {
+                playerAnimator.SetBool("SneakAnim", true);
+            }
         }
         else
         {
@@ -97,13 +97,9 @@ public class Player_Movement : MonoBehaviour
 
             mainCamera.gameObject.SetActive(true);
             tpCamera.gameObject.SetActive(false);
-            SneakAnim = false; //Triston added code!
-            playerAnimator.SetBool ("SneakAnim", false); //Triston added code!
         }
         #endregion
 
         transform.position += totalForce * Time.deltaTime;
-
-        //playerAnimator.SetFloat("Velocity", totalForce.magnitude);
     }
 }

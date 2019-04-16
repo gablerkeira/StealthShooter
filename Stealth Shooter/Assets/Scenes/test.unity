@@ -239,31 +239,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.163
+      value: -0.233
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.259
+      value: 0.338
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.255
+      value: -0.053
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.35507748
+      value: 0.3604657
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.47736955
+      value: -0.5703662
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.5418878
+      value: 0.72380435
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.59362954
+      value: 0.14440961
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_RootOrder
@@ -271,27 +271,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 5.497
+      value: 68.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 72.937004
+      value: 75.93
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -80.718
+      value: 213.30699
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.82
+      value: 0.82000065
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.82
+      value: 0.82000077
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.82
+      value: 0.8200015
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
@@ -445,6 +445,7 @@ GameObject:
   - component: {fileID: 1250873608}
   - component: {fileID: 1250873610}
   - component: {fileID: 1250873609}
+  - component: {fileID: 1250873611}
   m_Layer: 0
   m_Name: EyeCamera
   m_TagString: Untagged
@@ -516,6 +517,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1250873611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250873607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86bbfb826ec803b46acf6fbb8753c0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1250873607}
 --- !u!4 &1287518991 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400072, guid: ea68a1c99d304924786afdab82082bc3,
@@ -772,7 +786,7 @@ MonoBehaviour:
   crouchSpeed: 1
   crouchRotateSpeed: 37.5
   rotateSpeed: 75
-  rb: {fileID: 0}
+  rb: {fileID: 1914122294}
   playerAnimator: {fileID: 9500000, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
   mainCamera: {fileID: 1250873607}
   tpCamera: {fileID: 1079193636}
