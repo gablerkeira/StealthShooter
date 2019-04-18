@@ -428,6 +428,7 @@ GameObject:
   - component: {fileID: 421316604}
   - component: {fileID: 421316606}
   - component: {fileID: 421316605}
+  - component: {fileID: 421316607}
   m_Layer: 5
   m_Name: 'GrapplingHook Image '
   m_TagString: Untagged
@@ -468,7 +469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -489,6 +490,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421316603}
   m_CullTransparentMesh: 0
+--- !u!114 &421316607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421316603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f147f33e3263a48ae595fae646a6d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GotGun: 0
+  GotKey: 0
+  CanWire: 0
+  GotHook: 0
+  SoundGun: {fileID: 0}
+  Key: {fileID: 0}
+  Wire: {fileID: 0}
+  GrapplingHook: {fileID: 0}
 --- !u!1 &595132224
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,6 +521,7 @@ GameObject:
   - component: {fileID: 595132225}
   - component: {fileID: 595132227}
   - component: {fileID: 595132226}
+  - component: {fileID: 595132228}
   m_Layer: 5
   m_Name: Key Image
   m_TagString: Untagged
@@ -540,7 +562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -561,6 +583,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595132224}
   m_CullTransparentMesh: 0
+--- !u!114 &595132228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595132224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f147f33e3263a48ae595fae646a6d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GotGun: 0
+  GotKey: 0
+  CanWire: 0
+  GotHook: 0
+  SoundGun: {fileID: 0}
+  Key: {fileID: 0}
+  Wire: {fileID: 0}
+  GrapplingHook: {fileID: 0}
 --- !u!1 &662287118
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,6 +696,7 @@ RectTransform:
   - {fileID: 2113934278}
   - {fileID: 421316604}
   - {fileID: 595132225}
+  - {fileID: 2046018713}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1435,6 +1478,99 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821c06259e7301f43b37eecf16ff2b95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2046018712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2046018713}
+  - component: {fileID: 2046018716}
+  - component: {fileID: 2046018715}
+  - component: {fileID: 2046018714}
+  m_Layer: 5
+  m_Name: Wire Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2046018713
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046018712}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 662287122}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2046018714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046018712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f147f33e3263a48ae595fae646a6d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GotGun: 0
+  GotKey: 0
+  CanWire: 0
+  GotHook: 0
+  SoundGun: {fileID: 0}
+  Key: {fileID: 0}
+  Wire: {fileID: 2046018715}
+  GrapplingHook: {fileID: 0}
+--- !u!114 &2046018715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046018712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 2800000, guid: de7350adf53e52649891163f683e4888, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &2046018716
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046018712}
+  m_CullTransparentMesh: 0
 --- !u!1 &2113934277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,6 +1582,7 @@ GameObject:
   - component: {fileID: 2113934278}
   - component: {fileID: 2113934280}
   - component: {fileID: 2113934279}
+  - component: {fileID: 2113934281}
   m_Layer: 5
   m_Name: Soundgun Image
   m_TagString: Untagged
@@ -1486,13 +1623,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: f7ed10f74e5c57e4ca924b2f9143eb82, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1507,3 +1644,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113934277}
   m_CullTransparentMesh: 0
+--- !u!114 &2113934281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113934277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f147f33e3263a48ae595fae646a6d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GotGun: 0
+  GotKey: 0
+  CanWire: 0
+  GotHook: 0
+  SoundGun: {fileID: 2113934279}
+  Key: {fileID: 0}
+  Wire: {fileID: 0}
+  GrapplingHook: {fileID: 0}
