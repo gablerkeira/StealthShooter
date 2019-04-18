@@ -4,13 +4,51 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Camera
+    100004: pCube2
+    100006: pCube3
+    100008: Sun
     400000: //RootNode
+    400002: Camera
+    400004: pCube2
+    400006: pCube3
+    400008: Sun
+    2000000: Camera
     2100000: lambert1
+    2100002: lambert1.002
+    2100004: GunBaseCoat
+    2100006: lambert5
+    2100008: lambert2
+    2100010: Capsuals
     2300000: //RootNode
+    2300002: pCube2
+    2300004: pCube3
     3300000: //RootNode
+    3300002: pCube2
+    3300004: pCube3
     4300000: pCube2
+    4300002: pCube3
     7400000: Take 001
+    7400002: pCube2|pCube2|Take 001|BaseLayer
+    7400004: pCube2|pCube2|Take 001|BaseLayer.001
+    7400006: pCube2|pCube3Action
+    7400008: pCube3|pCube2|Take 001|BaseLayer
+    7400010: pCube3|pCube2|Take 001|BaseLayer.001
+    7400012: pCube3|pCube3Action
+    7400014: 'pCube2|pCube2|pCube2|pCube2|Take 001|BaseLayer.001|pCube2|pCube2|Take '
+    7400016: pCube2|pCube2|pCube2|pCube2|Take 001|BaseLayer|pCube2|pCube2|Take 001|
+    7400018: pCube2|pCube2|pCube2|pCube3Action|pCube2|pCube3Action
+    7400020: 'pCube2|pCube3|pCube3|pCube2|Take 001|BaseLayer.001|pCube3|pCube2|Take '
+    7400022: pCube2|pCube3|pCube3|pCube2|Take 001|BaseLayer|pCube3|pCube2|Take 001|
+    7400024: pCube2|pCube3|pCube3|pCube3Action|pCube3|pCube3Action
+    7400026: pCube2|pCube2|pCube2|pCube2|pCube2|pCube2|Take 001|BaseLayer.001|pCube
+    7400028: pCube2|pCube2|pCube2|pCube2|pCube2|pCube2|Take 001|BaseLayer|pCube2|pC
+    7400030: pCube2|pCube2|pCube2|pCube2|pCube2|pCube3Action|pCube2|pCube3Action|pC
+    7400032: pCube2|pCube2|pCube2|pCube3|pCube3|pCube2|Take 001|BaseLayer.001|pCube
+    7400034: pCube2|pCube2|pCube2|pCube3|pCube3|pCube2|Take 001|BaseLayer|pCube3|pC
+    7400036: pCube2|pCube2|pCube2|pCube3|pCube3|pCube3Action|pCube3|pCube3Action|pC
     9500000: //RootNode
+    10800000: Sun
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -42,7 +80,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 15
+    globalScale: 17
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -63,7 +101,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.24
+    previousCalculatedGlobalScale: 0.01
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60

@@ -9,16 +9,43 @@ ModelImporter:
     100006: pCube3
     100008: transform1
     100010: transform2
+    100012: Armature
+    100014: Bone
+    100016: Bone.001
+    100018: Bone.002
+    100020: Bone.003
+    100022: Bone.004
+    100024: Bone.005
+    100026: Bone.005_end
+    100028: Camera
+    100030: Sun
+    100032: Bone.005_end_end
     400000: //RootNode
     400002: pCube1
     400004: pCube2
     400006: pCube3
     400008: transform1
     400010: transform2
+    400012: Armature
+    400014: Bone
+    400016: Bone.001
+    400018: Bone.002
+    400020: Bone.003
+    400022: Bone.004
+    400024: Bone.005
+    400026: Bone.005_end
+    400028: Camera
+    400030: Sun
+    400032: Bone.005_end_end
+    2000000: Camera
     2100000: lambert1
+    2100002: Material.001
     2300000: pCube3
     3300000: pCube3
     4300000: pCube3
+    10800000: Sun
+    11100000: //RootNode
+    13700000: pCube3
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -96,10 +123,10 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
