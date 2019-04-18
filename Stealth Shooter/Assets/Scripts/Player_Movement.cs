@@ -22,7 +22,7 @@ public class Player_Movement : MonoBehaviour
 
     Vector3 totalForce = Vector3.zero;
     bool crouching = false;
-    public Action<GameObject> OnFire = delegate { };
+    public Action OnFire = delegate { };
 
     [Tooltip("First Person Camera View")]
     public GameObject mainCamera;
@@ -100,18 +100,11 @@ public class Player_Movement : MonoBehaviour
         }
         #endregion
 
-        transform.position += totalForce * Time.deltaTime;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Enemy"))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (Input.GetKeyDown(KeyCode.Q))
-            {
-                Debug.Log("Please");
-                OnFire(other.gameObject);
-            }
+            OnFire();
         }
+
+        transform.position += totalForce * Time.deltaTime;
     }
 }
