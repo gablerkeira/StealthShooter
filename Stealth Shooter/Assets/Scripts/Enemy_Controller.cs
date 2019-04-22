@@ -6,11 +6,6 @@ public class Enemy_Controller : MonoBehaviour
 {
     public Collider boxCollider;
 
-    private void Awake()
-    {
-        GameObject.FindWithTag("Player").GetComponent<Player_Attack>().OnDie += Die;
-    }
-
     void Start()
     {
         setRigidbodyState(true);

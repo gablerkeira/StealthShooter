@@ -34,9 +34,12 @@ public class Player_Movement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        playerAnimator = gameObject.GetComponent<Animator>(); 
+        playerAnimator = gameObject.GetComponent<Animator>();
         mainCamera.gameObject.SetActive(true);
+        Debug.Log(mainCamera.gameObject.activeInHierarchy);
+
         tpCamera.gameObject.SetActive(false);
+        Debug.Log(tpCamera.gameObject.activeInHierarchy);
     }
 
     void Update()

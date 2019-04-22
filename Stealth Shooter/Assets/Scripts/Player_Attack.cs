@@ -36,8 +36,9 @@ public class Player_Attack : MonoBehaviour
     {
         if (nearbyEnemy.Count > 0)
         {
-            playerAnimator.SetBool("ChokeEm", true);
+            //playerAnimator.SetBool("ChokeEm", true);
             OnDie();
         }
+        //playerAnimator.SetBool("ChokeEm", false);
     }
 }

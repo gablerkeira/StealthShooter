@@ -14,13 +14,13 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: ChokeEm
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -230,7 +230,7 @@ AnimatorStateMachine:
     m_Position: {x: 316.55792, y: 8.988556, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102537459048404674}
-    m_Position: {x: 444, y: 84, z: 0}
+    m_Position: {x: 504, y: 84, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102425069757120154}
     m_Position: {x: 564, y: 12, z: 0}
