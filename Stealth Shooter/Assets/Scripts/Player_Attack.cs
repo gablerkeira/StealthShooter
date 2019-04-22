@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Player_Attack : MonoBehaviour
 {
+    public Animator playerAnimator;
     public Action OnDie = delegate { };
     [Tooltip("List of nearby enemies to the player")]
     public List<GameObject> nearbyEnemy;
@@ -17,6 +18,7 @@ public class Player_Attack : MonoBehaviour
     void Start()
     {
         nearbyEnemy = new List<GameObject>();
+        playerAnimator = gameObject.GetComponent<Animator>();
     }
 
     public void AddEnemy(GameObject obj)
@@ -34,7 +36,7 @@ public class Player_Attack : MonoBehaviour
     {
         if (nearbyEnemy.Count > 0)
         {
-            //start animation for enemy takedown
+            playerAnimator.SetBool("ChokeEm", true);
             OnDie();
         }
     }

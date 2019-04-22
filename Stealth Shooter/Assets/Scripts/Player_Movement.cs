@@ -21,7 +21,7 @@ public class Player_Movement : MonoBehaviour
     #endregion
 
     Vector3 totalForce = Vector3.zero;
-    bool crouching = false;
+    public bool crouching = false;
     public Action OnFire = delegate { };
 
     [Tooltip("First Person Camera View")]
