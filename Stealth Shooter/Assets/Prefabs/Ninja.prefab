@@ -681,7 +681,6 @@ Transform:
   - {fileID: 5006220253635802452}
   - {fileID: 5006220253245180639}
   - {fileID: 5006220252982285700}
-  - {fileID: 5006220253833070320}
   m_Father: {fileID: 5006220251943448432}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -978,7 +977,7 @@ GameObject:
   - component: {fileID: 5006220252927259935}
   - component: {fileID: 5006220252927259932}
   m_Layer: 0
-  m_Name: NinjaSneak 1
+  m_Name: Ninja
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2465,78 +2464,3 @@ Transform:
   m_Father: {fileID: 5006220252247951371}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &5006220253832682608
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5006220253910449705}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.233
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.338
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.053
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.3604657
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.5703662
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.72380435
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.14440961
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 68.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 75.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 213.30699
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.82000065
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.82000077
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.8200015
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
-      propertyPath: m_Name
-      value: SoundGun
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21, type: 3}
---- !u!4 &5006220253833070320 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 47e8ce9c94960384aa9ba3e90d6e5c21,
-    type: 3}
-  m_PrefabInstance: {fileID: 5006220253832682608}
-  m_PrefabAsset: {fileID: 0}
