@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 33604776}
   - component: {fileID: 33604775}
   - component: {fileID: 33604774}
+  - component: {fileID: 33604777}
   m_Layer: 5
   m_Name: Retry Button
   m_TagString: Untagged
@@ -146,10 +147,10 @@ RectTransform:
   m_Father: {fileID: 1130871058}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 200, y: 100}
+  m_AnchorMin: {x: 0.44816673, y: 0.55081475}
+  m_AnchorMax: {x: 0.549, y: 0.6378519}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &33604774
 MonoBehaviour:
@@ -190,7 +191,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 33604775}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 33604777}
+        m_MethodName: _changeToPreviousLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &33604775
@@ -230,6 +242,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33604772}
   m_CullTransparentMesh: 0
+--- !u!114 &33604777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33604772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dcc12e9bb1bb0e4b9e6619fe86c8741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &140567422
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,10 +516,10 @@ RectTransform:
   m_Father: {fileID: 1130871058}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -169}
-  m_SizeDelta: {x: 600, y: 80}
+  m_AnchorMin: {x: 0.34443757, y: 0.7696296}
+  m_AnchorMax: {x: 0.6568751, y: 0.8447778}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1079334289
 MonoBehaviour:
@@ -726,6 +750,7 @@ GameObject:
   - component: {fileID: 1373494752}
   - component: {fileID: 1373494751}
   - component: {fileID: 1373494750}
+  - component: {fileID: 1373494753}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -748,10 +773,10 @@ RectTransform:
   m_Father: {fileID: 1130871058}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 200, y: 100}
+  m_AnchorMin: {x: 0.44816673, y: 0.36122224}
+  m_AnchorMax: {x: 0.549, y: 0.4538148}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1373494750
 MonoBehaviour:
@@ -792,7 +817,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1373494751}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1373494753}
+        m_MethodName: _Exit_Game
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1373494751
@@ -832,6 +868,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373494748}
   m_CullTransparentMesh: 0
+--- !u!114 &1373494753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373494748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26827e9b1810404681d6f592c8061d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1540911284
 GameObject:
   m_ObjectHideFlags: 0

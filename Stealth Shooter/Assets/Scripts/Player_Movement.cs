@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -34,12 +35,12 @@ public class Player_Movement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
+        _Level_Manager.setLastLevel(SceneManager.GetActiveScene().name);
         playerAnimator = gameObject.GetComponent<Animator>();
         mainCamera.gameObject.SetActive(true);
-        Debug.Log(mainCamera.gameObject.activeInHierarchy);
 
         tpCamera.gameObject.SetActive(false);
-        Debug.Log(tpCamera.gameObject.activeInHierarchy);
+
     }
 
     void Update()
