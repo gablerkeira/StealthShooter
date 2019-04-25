@@ -872,6 +872,11 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 0.000000029802322
       objectReference: {fileID: 0}
+    - target: {fileID: 342115396236693795, guid: 7179a5a49925a7b4a9f1682e661a5038,
+        type: 3}
+      propertyPath: m_Materials.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3795020a627e67d4091661ee873d9db5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7179a5a49925a7b4a9f1682e661a5038, type: 3}
 --- !u!1 &1337591951
@@ -4124,7 +4129,7 @@ SkinnedMeshRenderer:
   - {fileID: 2100004, guid: c443c62ca4511924fa79db02e651424b, type: 3}
   - {fileID: 2100006, guid: c443c62ca4511924fa79db02e651424b, type: 3}
   - {fileID: 2100008, guid: c443c62ca4511924fa79db02e651424b, type: 3}
-  - {fileID: 2100010, guid: c443c62ca4511924fa79db02e651424b, type: 3}
+  - {fileID: 2100000, guid: 35f72ce04bb6269499147f938a12cc42, type: 2}
   - {fileID: 2100012, guid: c443c62ca4511924fa79db02e651424b, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -4625,7 +4630,7 @@ PrefabInstance:
     - target: {fileID: 5006220253563492961, guid: 2311e83eeb2589348aa7270917c3edb1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -66.86
+      value: -68.891
       objectReference: {fileID: 0}
     - target: {fileID: 5006220253563492961, guid: 2311e83eeb2589348aa7270917c3edb1,
         type: 3}

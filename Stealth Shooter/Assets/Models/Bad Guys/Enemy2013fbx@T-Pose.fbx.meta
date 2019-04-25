@@ -160,7 +160,12 @@ ModelImporter:
     7400000: mixamo.com
     9500000: //RootNode
     13700000: polySurface14
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SunGlasses
+    second: {fileID: 2100000, guid: 35f72ce04bb6269499147f938a12cc42, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -212,7 +217,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
+    previousCalculatedGlobalScale: 0.37
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60

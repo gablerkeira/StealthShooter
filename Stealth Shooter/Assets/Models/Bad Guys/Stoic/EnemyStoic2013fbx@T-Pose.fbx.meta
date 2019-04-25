@@ -176,7 +176,12 @@ ModelImporter:
     7400000: mixamo.com
     9500000: //RootNode
     13700000: pCube18
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glasses_2
+    second: {fileID: 2100000, guid: 3795020a627e67d4091661ee873d9db5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -228,7 +233,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
+    previousCalculatedGlobalScale: 0.37
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
