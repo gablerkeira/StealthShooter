@@ -40,11 +40,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6831847605990923652}
     m_Modifications:
-    - target: {fileID: 784232316335383961, guid: 0e288166bd1bb7c4e8dd1d232b44844b,
-        type: 3}
-      propertyPath: m_Name
-      value: Vent - Wall
-      objectReference: {fileID: 0}
     - target: {fileID: 217277780196915906, guid: 0e288166bd1bb7c4e8dd1d232b44844b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -100,6 +95,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 784232316335383961, guid: 0e288166bd1bb7c4e8dd1d232b44844b,
+        type: 3}
+      propertyPath: m_Name
+      value: Vent - Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 784232316335383961, guid: 0e288166bd1bb7c4e8dd1d232b44844b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 784232316335383961, guid: 0e288166bd1bb7c4e8dd1d232b44844b,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8212344229671606683, guid: 0e288166bd1bb7c4e8dd1d232b44844b,
         type: 3}
       propertyPath: m_Mesh
@@ -125,11 +135,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6831847605990923652}
     m_Modifications:
-    - target: {fileID: 784232316335383961, guid: 0e288166bd1bb7c4e8dd1d232b44844b,
-        type: 3}
-      propertyPath: m_Name
-      value: Vent - Wall (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 217277780196915906, guid: 0e288166bd1bb7c4e8dd1d232b44844b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -185,6 +190,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 784232316335383961, guid: 0e288166bd1bb7c4e8dd1d232b44844b,
+        type: 3}
+      propertyPath: m_Name
+      value: Vent - Wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 784232316335383961, guid: 0e288166bd1bb7c4e8dd1d232b44844b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 784232316335383961, guid: 0e288166bd1bb7c4e8dd1d232b44844b,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8212344229671606683, guid: 0e288166bd1bb7c4e8dd1d232b44844b,
         type: 3}
       propertyPath: m_Mesh
@@ -214,6 +234,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vent - Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753554438894172154, guid: 5a52e120faeabcf4a86061e57fd2d160,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5036300962497572932, guid: 5a52e120faeabcf4a86061e57fd2d160,
         type: 3}
