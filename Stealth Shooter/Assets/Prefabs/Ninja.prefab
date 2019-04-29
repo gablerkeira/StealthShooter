@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8943397341592763369
 Transform:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3712836996545993912
 Transform:
   m_ObjectHideFlags: 0
@@ -523,7 +523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4472300113486866300
 Transform:
   m_ObjectHideFlags: 0
@@ -3066,6 +3066,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SoundGun(withAnims)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511024847020516639, guid: cdbccb7c005e74a48945984c8059ecd0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 643494712290631250, guid: cdbccb7c005e74a48945984c8059ecd0,
         type: 3}
