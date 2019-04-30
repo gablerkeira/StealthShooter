@@ -19,6 +19,7 @@ public class Player_Attack : MonoBehaviour
     {
         nearbyEnemy = new List<GameObject>();
         playerAnimator = gameObject.GetComponent<Animator>();
+
     }
 
     public void AddEnemy(GameObject obj)
@@ -36,9 +37,23 @@ public class Player_Attack : MonoBehaviour
     {
         if (nearbyEnemy.Count > 0)
         {
-            //playerAnimator.SetBool("ChokeEm", true);
-            OnDie();
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                playerAnimator.SetBool("ChokeEm", true);
+                StartCoroutine(WaitToChoke());
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+
+            }
         }
-        //playerAnimator.SetBool("ChokeEm", false);
+    }
+
+    IEnumerator WaitToChoke()
+    {
+        yield return new WaitForSeconds(3.2f);
+
+        playerAnimator.SetBool("ChokeEm", false);
+        OnDie();
     }
 }

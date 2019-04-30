@@ -5,9 +5,9 @@ using UnityEngine;
 public class Enemy_Controller : MonoBehaviour
 {
     public Collider boxCollider;
-
     void Start()
     {
+
         setRigidbodyState(true);
         setColliderState(false);
         GetComponent<Animator>().enabled = true;
