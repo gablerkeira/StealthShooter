@@ -8,11 +8,13 @@ public class Enemy_Patrol : MonoBehaviour
     public Transform[] waypoints;
     private int destPoint = 0;
     private NavMeshAgent agent;
+    public Animator animator;
 
     private void Start()
     {
+        animator = gameObject.GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
-
+        animator.SetBool("Walk", true);
         GotoNextPoint();
     }
 
