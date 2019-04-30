@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1b75ac8fd49479f4fb80bd3f487b10bd
+guid: fff46cf3f57eefc47a5757a0163950ae
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -135,7 +135,7 @@ ModelImporter:
     400126: mixamorig:Spine
     400128: mixamorig:Spine1
     400130: mixamorig:Spine2
-    7400000: Fighting
+    7400000: T-Pose@Idle
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -166,10 +166,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Fighting
+      name: T-Pose@Idle
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 198
+      lastFrame: 117
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
