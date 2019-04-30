@@ -9,6 +9,7 @@ public class Player_Attack : MonoBehaviour
     public Action OnDie = delegate { };
     [Tooltip("List of nearby enemies to the player")]
     public List<GameObject> nearbyEnemy;
+    Ray mousePoint;
 
     private void Awake()
     {
@@ -44,7 +45,7 @@ public class Player_Attack : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.E))
             {
-
+                mousePoint = Camera.main.ScreenPointToRay(Input.mousePosition);
             }
         }
     }
