@@ -20,4 +20,8 @@ public class _Menu_UI : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
+    public void _MainMenu_Scene()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }

@@ -785,7 +785,7 @@ Animator:
   m_GameObject: {fileID: 3971397941346364606}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: c443c62ca4511924fa79db02e651424b, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 911d5acf3480e8d4b90f543f704e5167, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -885,6 +885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
+  animator: {fileID: 3971397941339070334}
 --- !u!1 &3971397941346364608
 GameObject:
   m_ObjectHideFlags: 0
