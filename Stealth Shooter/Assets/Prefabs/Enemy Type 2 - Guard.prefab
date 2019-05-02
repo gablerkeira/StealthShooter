@@ -2403,6 +2403,7 @@ GameObject:
   - component: {fileID: 342115396031374007}
   - component: {fileID: 342115394548312020}
   - component: {fileID: 342115394548312021}
+  - component: {fileID: 1633565387458714730}
   - component: {fileID: 342115394548312016}
   m_Layer: 0
   m_Name: Enemy Type 2 - Guard
@@ -2496,6 +2497,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 3.14, z: 2.5}
   m_Center: {x: 0, y: 1.67, z: -0.6}
+--- !u!114 &1633565387458714730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342115396031374004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb6d5fa8ed2074e459ec8dfa280451ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  detectionRange: 0
+  visibilityCone: 0
 --- !u!114 &342115394548312016
 MonoBehaviour:
   m_ObjectHideFlags: 0

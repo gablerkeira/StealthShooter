@@ -2878,7 +2878,7 @@ GameObject:
   - component: {fileID: 5006220253873673262}
   - component: {fileID: 5006220253873673260}
   - component: {fileID: 5006220253873673263}
-  - component: {fileID: 5006220253873673261}
+  - component: {fileID: 8916767265027897365}
   m_Layer: 0
   m_Name: EyeCamera
   m_TagString: Untagged
@@ -2950,7 +2950,7 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5006220253873673249}
   m_Enabled: 1
---- !u!114 &5006220253873673261
+--- !u!114 &8916767265027897365
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

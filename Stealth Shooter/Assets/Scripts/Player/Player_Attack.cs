@@ -7,6 +7,7 @@ public class Player_Attack : MonoBehaviour
 {
     public Animator playerAnimator;
     public Action OnDie = delegate { };
+    public Action<GameObject> OnChoke = delegate { };
     [Tooltip("List of nearby enemies to the player")]
     public List<GameObject> nearbyEnemy;
     Ray mousePoint;
@@ -52,9 +53,18 @@ public class Player_Attack : MonoBehaviour
 
     IEnumerator WaitToChoke()
     {
+        OnChoke(nearbyEnemy[0]);
+        Collider playerCol = GetComponent<Collider>();
+        playerCol.isTrigger = true;
+        Rigidbody playerRb = GetComponent<Rigidbody>();
+        playerRb.useGravity = false;
+
         yield return new WaitForSeconds(3.2f);
 
         playerAnimator.SetBool("ChokeEm", false);
+        RemoveEnemy(nearbyEnemy[0]);
         OnDie();
+        playerCol.isTrigger = false;
+        playerRb.useGravity = true;
     }
 }
