@@ -18,6 +18,7 @@ public class Enemy_Controller : MonoBehaviour
 
     public void Die()
     {
+        GameObject.FindWithTag("Player").GetComponent<Player_Attack>().OnChoke -= Choking;
         GetComponent<Animator>().enabled = false;
         setRigidbodyState(false);
         setColliderState(true);
@@ -30,6 +31,7 @@ public class Enemy_Controller : MonoBehaviour
 
     public void Choking(GameObject enemyToChoke)
     {
+        Debug.Log(this.gameObject.name);
         if (this.gameObject == enemyToChoke)
         {
             if (enemyToChoke.GetComponent<Enemy_Patrol>() != null)

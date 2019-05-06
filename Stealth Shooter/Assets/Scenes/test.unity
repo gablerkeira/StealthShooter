@@ -670,6 +670,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Type 1 - Grunt
       objectReference: {fileID: 0}
+    - target: {fileID: 3971397941339070334, guid: eb170f55030a5c84ea69cc2b0d6307e4,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 911d5acf3480e8d4b90f543f704e5167, type: 2}
     - target: {fileID: 3971397941346529438, guid: eb170f55030a5c84ea69cc2b0d6307e4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -900,11 +905,6 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 0.000000044703484
       objectReference: {fileID: 0}
-    - target: {fileID: 3971397941339070334, guid: eb170f55030a5c84ea69cc2b0d6307e4,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 911d5acf3480e8d4b90f543f704e5167, type: 2}
     - target: {fileID: 3971397941343183294, guid: eb170f55030a5c84ea69cc2b0d6307e4,
         type: 3}
       propertyPath: m_Materials.Array.data[5]
@@ -982,7 +982,7 @@ PrefabInstance:
     - target: {fileID: 5006220253563492961, guid: 2311e83eeb2589348aa7270917c3edb1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7142855
+      value: 1.86
       objectReference: {fileID: 0}
     - target: {fileID: 5006220253563492961, guid: 2311e83eeb2589348aa7270917c3edb1,
         type: 3}
@@ -1037,6 +1037,26 @@ PrefabInstance:
     - target: {fileID: 5006220252927259934, guid: 2311e83eeb2589348aa7270917c3edb1,
         type: 3}
       propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006220252927259934, guid: 2311e83eeb2589348aa7270917c3edb1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006220252927259921, guid: 2311e83eeb2589348aa7270917c3edb1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006220252927259923, guid: 2311e83eeb2589348aa7270917c3edb1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006220252927259935, guid: 2311e83eeb2589348aa7270917c3edb1,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
