@@ -12,7 +12,7 @@ FBXHeaderExtension:  {
 		Hour: 13
 		Minute: 39
 		Second: 0
-		Millisecond: 678
+		Millisecond: 389
 	}
 	Creator: "FBX SDK/FBX Plugins version 2018.1.1"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -28,19 +28,19 @@ FBXHeaderExtension:  {
 			Comment: ""
 		}
 		Properties70:  {
-			P: "DocumentUrl", "KString", "Url", "", "F:\Game Dev\Assets\ShipTileSet\New\Wall_Tile.fbx"
-			P: "SrcDocumentUrl", "KString", "Url", "", "F:\Game Dev\Assets\ShipTileSet\New\Wall_Tile.fbx"
+			P: "DocumentUrl", "KString", "Url", "", "F:\Game Dev\Assets\ShipTileSet\New\Corner_Tile.fbx"
+			P: "SrcDocumentUrl", "KString", "Url", "", "F:\Game Dev\Assets\ShipTileSet\New\Corner_Tile.fbx"
 			P: "Original", "Compound", "", ""
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "Maya"
 			P: "Original|ApplicationVersion", "KString", "", "", "201800"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "07/05/2019 18:39:00.677"
-			P: "Original|FileName", "KString", "", "", "F:\Game Dev\Assets\ShipTileSet\New\Wall_Tile.fbx"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "07/05/2019 18:39:00.387"
+			P: "Original|FileName", "KString", "", "", "F:\Game Dev\Assets\ShipTileSet\New\Corner_Tile.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "Maya"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "201800"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "07/05/2019 18:39:00.677"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "07/05/2019 18:39:00.387"
 			P: "Original|ApplicationActiveProject", "KString", "", "", "F:\Game Dev\Assets\ShipTileSet"
 			P: "Original|ApplicationNativeFile", "KString", "", "", "F:\Game Dev\Assets\ShipTileSet\ShipTileSet.mb"
 		}
@@ -232,15 +232,15 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	NodeAttribute: 2076621592576, "NodeAttribute::", "Null" {
+	NodeAttribute: 2076621584480, "NodeAttribute::", "Null" {
 		Properties70:  {
 			P: "Look", "enum", "", "",0
 		}
 		TypeFlags: "Null"
 	}
-	Geometry: 2076619946112, "Geometry::", "Mesh" {
+	Geometry: 2076619936896, "Geometry::", "Mesh" {
 		Vertices: *24 {
-			a: -11.8006134033203,0,2.5,-11.5,0,2.5,-11.8006134033203,4,2.5,-11.5,4,2.5,-11.8006134033203,3.99999976158142,-0.5,-11.5,4,-0.5,-11.8006134033203,0,-0.5,-11.5,0,-0.5
+			a: -11.8006134033203,0,5.5,-11.5,0,5.5,-11.8006134033203,4,5.5,-11.5,4,5.5,-8.5,3.99999976158142,2.19938611984253,-8.5,4,2.5,-8.5,0,2.19938611984253,-8.5,0,2.5
 		} 
 		PolygonVertexIndex: *24 {
 			a: 0,1,3,-3,2,3,5,-5,4,5,7,-7,6,7,1,-1,1,7,5,-4,6,0,2,-5
@@ -255,7 +255,7 @@ Objects:  {
 			MappingInformationType: "ByPolygonVertex"
 			ReferenceInformationType: "Direct"
 			Normals: *72 {
-				a: 0,0,0.999999940395355,0,0,0.999999940395355,0,0,0.999999940395355,0,0,0.999999940395355,-3.9655347450207e-07,1,0,-3.9655347450207e-07,1,0,-3.9655347450207e-07,1,0,-3.9655347450207e-07,1,0,0,0,-1,0,0,-0.999999940395355,0,0,-0.999999940395355,0,0,-0.999999940395355,0,-1,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0
+				a: 0,0,0.999999940395355,0,0,0.999999940395355,0,0,0.999999940395355,0,0,0.999999940395355,-3.77632886738866e-07,1,0,-3.77632858317156e-07,1,0,-3.77632858317156e-07,1,0,-3.77632858317156e-07,0.999999940395355,0,1,0,0,0.999999940395355,0,0,0.999999940395355,0,0,0.999999940395355,0,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0.70710676908493,0,0.70710676908493,0.70710676908493,0,0.70710676908493,0.70710676908493,0,0.70710676908493,0.70710676908493,0,0.70710676908493,-0.707106828689575,0,-0.707106709480286,-0.707106828689575,0,-0.707106709480286,-0.70710688829422,0,-0.707106709480286,-0.707106828689575,0,-0.707106709480286
 			} 
 			NormalsW: *24 {
 				a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
@@ -267,7 +267,7 @@ Objects:  {
 			MappingInformationType: "ByPolygonVertex"
 			ReferenceInformationType: "Direct"
 			Binormals: *72 {
-				a: 0,1,-0,0,1,-0,0,1,-0,0,1,-0,0,0,-1,0,0,-1,0,0,-1,0,0,-1,7.93106949004141e-07,-1,0,3.9655350292378e-07,-1,0,0,-1,0,3.9655350292378e-07,-1,0,0,0,1,0,0,1,0,0,1,0,0,1,-0,1,0,-0,1,0,0,1,-0,-0,1,0,0,1,0,0,1,-3.97364310344983e-08,0,1,-7.94728620689966e-08,0,1,-3.97364310344983e-08
+				a: 0,1,-0,0,1,-0,0,1,-0,0,1,-0,0,0,-1,0.707106828689575,2.67026791789249e-07,-0.707106828689575,1,3.77632858317156e-07,-2.99502772842936e-13,0.70710676908493,2.67026791789249e-07,-0.70710676908493,0,-1,7.93105698448926e-07,0,-1,3.96552877646172e-07,0,-1,0,0,-1,3.96552877646172e-07,-1,0,0,-0.707106828689575,0,0.707106828689575,0,0,1,-0.707106828689575,0,0.707106828689575,0,1,-0,0,1,-0,0,1,-0,0,1,-0,0,1,0,1.805865323945e-08,1,-1.80586567921637e-08,3.61173029261863e-08,1,-3.61173135843273e-08,1.805865323945e-08,1,-1.80586567921637e-08
 			} 
 			BinormalsW: *24 {
 				a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
@@ -280,7 +280,7 @@ Objects:  {
 			MappingInformationType: "ByPolygonVertex"
 			ReferenceInformationType: "Direct"
 			Tangents: *72 {
-				a: 1,-0,-0,1,-0,0,1,-0,0,1,-0,0,1,3.9655347450207e-07,0,1,3.9655347450207e-07,0,1,3.9655347450207e-07,0,1,3.9655347450207e-07,0,1,7.93106949004141e-07,0,1,3.9655347450207e-07,0,1,0,0,1,3.9655347450207e-07,0,1,0,-0,1,0,-0,1,0,-0,1,0,-0,0,0,-1,0,0,-1,0,-0,-1,0,0,-1,0,-0,1,0,3.97364310344983e-08,1,0,7.94728620689966e-08,1,0,3.97364310344983e-08,1
+				a: 1,-0,-0,1,-0,0,1,-0,0,1,-0,0,1,3.77632886738866e-07,0,0.70710676908493,2.67026763367539e-07,0.70710676908493,2.99502772842936e-13,0,1,0.70710676908493,2.67026791789249e-07,0.70710676908493,-0,7.93105698448926e-07,1,0,3.96552849224463e-07,1,0,0,1,0,3.96552849224463e-07,1,0,0,1,0.70710676908493,0,0.70710676908493,1,0,-0,0.70710676908493,0,0.70710676908493,0.707106828689575,-0,-0.707106828689575,0.707106828689575,-0,-0.707106828689575,0.707106828689575,-0,-0.707106828689575,0.707106828689575,-0,-0.707106828689575,-0.707106709480286,-0,0.707106828689575,-0.707106709480286,2.55387959668951e-08,0.707106828689575,-0.707106709480286,5.10775919337902e-08,0.70710688829422,-0.707106709480286,2.55387959668951e-08,0.707106828689575
 			} 
 			TangentsW: *24 {
 				a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
@@ -344,17 +344,17 @@ Objects:  {
 			}
 		}
 	}
-	NodeAttribute: 2076621594160, "NodeAttribute::", "Null" {
+	NodeAttribute: 2076621592928, "NodeAttribute::", "Null" {
 		Properties70:  {
 			P: "Look", "enum", "", "",0
 		}
 		TypeFlags: "Null"
 	}
-	Model: 2078288695248, "Model::Wall_Tile", "Null" {
+	Model: 2078288716128, "Model::Corner_Tile", "Null" {
 		Version: 232
 		Properties70:  {
-			P: "RotationPivot", "Vector3D", "Vector", "",-10,0,1
-			P: "ScalingPivot", "Vector3D", "Vector", "",-10,0,1
+			P: "RotationPivot", "Vector3D", "Vector", "",-10,0,4
+			P: "ScalingPivot", "Vector3D", "Vector", "",-10,0,4
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
@@ -363,7 +363,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 2078288709168, "Model::polySurface67", "Mesh" {
+	Model: 2078288692928, "Model::polySurface69", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -375,7 +375,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 2078288711488, "Model::transform42", "Null" {
+	Model: 2078288695248, "Model::transform43", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -387,7 +387,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Material: 2076616889504, "Material::lambert2", "" {
+	Material: 2076616888704, "Material::lambert2", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -409,24 +409,24 @@ Objects:  {
 
 Connections:  {
 	
-	;Model::Wall_Tile, Model::RootNode
-	C: "OO",2078288695248,0
+	;Model::Corner_Tile, Model::RootNode
+	C: "OO",2078288716128,0
 	
-	;NodeAttribute::, Model::Wall_Tile
-	C: "OO",2076621592576,2078288695248
+	;NodeAttribute::, Model::Corner_Tile
+	C: "OO",2076621584480,2078288716128
 	
-	;Model::polySurface67, Model::Wall_Tile
-	C: "OO",2078288709168,2078288695248
+	;Model::polySurface69, Model::Corner_Tile
+	C: "OO",2078288692928,2078288716128
 	
-	;Model::transform42, Model::Wall_Tile
-	C: "OO",2078288711488,2078288695248
+	;Model::transform43, Model::Corner_Tile
+	C: "OO",2078288695248,2078288716128
 	
-	;Geometry::, Model::polySurface67
-	C: "OO",2076619946112,2078288709168
+	;Geometry::, Model::polySurface69
+	C: "OO",2076619936896,2078288692928
 	
-	;Material::lambert2, Model::polySurface67
-	C: "OO",2076616889504,2078288709168
+	;Material::lambert2, Model::polySurface69
+	C: "OO",2076616888704,2078288692928
 	
-	;NodeAttribute::, Model::transform42
-	C: "OO",2076621594160,2078288711488
+	;NodeAttribute::, Model::transform43
+	C: "OO",2076621592928,2078288695248
 }

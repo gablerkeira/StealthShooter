@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Warehouse_Yacht : MonoBehaviour
+public class YachtToWin : MonoBehaviour
 {
+    // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("The Yacht");
+        SceneManager.LoadScene("Win Scene");
     }
 }
