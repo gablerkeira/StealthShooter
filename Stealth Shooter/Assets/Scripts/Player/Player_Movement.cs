@@ -104,7 +104,7 @@ public class Player_Movement : MonoBehaviour
         }
         #endregion
 
-        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Q) || Input.GetMouseButtonDown(0))
         {
             OnFire();
         }

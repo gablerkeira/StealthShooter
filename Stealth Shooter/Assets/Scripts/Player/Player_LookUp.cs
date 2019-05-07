@@ -14,10 +14,6 @@ public class Player_LookUp : MonoBehaviour
     {
         rotationY -= Input.GetAxis("Mouse Y") * sensitivityY;
         rotationY = Mathf.Clamp(rotationY, minY, maxY);
-        //Debug.Log(rotationY);
-        //mainCamera.transform.Rotate(new Vector3(rotationY, 0, 0));
-        //mainCamera.transform.localEulerAngles = new Vector3(rotationY, 0, 0);
-        mainCamera.transform.eulerAngles = new Vector3(rotationY, 0, 0);
- 
+        mainCamera.transform.localEulerAngles = new Vector3(rotationY, 0, 0);
     }
 }
