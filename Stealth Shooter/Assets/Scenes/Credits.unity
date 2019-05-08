@@ -112,6 +112,79 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &55966063
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_Name
+      value: NinjaSneak
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -19
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 29.369999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9968416
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.07941607
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 189.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 400132, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b678b21ba46e5ab4a9e6f9c51b0dc508, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea68a1c99d304924786afdab82082bc3, type: 3}
 --- !u!1 &228657678
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,7 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -229,7 +302,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -516,10 +589,10 @@ RectTransform:
   m_Father: {fileID: 1479007383}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.1015625, y: 0.08340741}
-  m_AnchorMax: {x: 0.90416664, y: 0.79600006}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 770}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1197685669
 MonoBehaviour:
@@ -534,7 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 0.392}
+  m_Color: {r: 1, g: 0, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -609,7 +682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 1, g: 0, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -934,7 +1007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -968,9 +1041,7 @@ MonoBehaviour:
 
     $ Sound Effects - DominiQue Johnson $
 
-    $ All Textures Used Are From Free, Non-Profit Sources $
-
-'
+    $ All Textures Used Are From Free, Non-Profit Sources $'
 --- !u!222 &1890198759
 CanvasRenderer:
   m_ObjectHideFlags: 0
