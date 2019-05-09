@@ -7,6 +7,7 @@ public class Enemy_Detect_Sound_grunt : MonoBehaviour, IEnemy_Detect_Sound
 {
     public NavMeshAgent myAgent;
     public float radiusOfSound;
+    public Animator animator;
 
     private void Awake()
     {
@@ -29,7 +30,15 @@ public class Enemy_Detect_Sound_grunt : MonoBehaviour, IEnemy_Detect_Sound
         }
 
         myAgent.isStopped = true;
+        animator.SetBool("Walk", false);
         yield return new WaitForSeconds(5f);
         myAgent.isStopped = false;
+        animator.SetBool("Walk", true);
+
+    }
+
+    private void OnDestroy()
+    {
+        GameObject.FindWithTag("Player").GetComponent<Player_Attack>().OnShoot -= GoToPoint;
     }
 }

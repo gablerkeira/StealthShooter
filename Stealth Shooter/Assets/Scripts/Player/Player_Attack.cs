@@ -6,6 +6,7 @@ using UnityEngine;
 public class Player_Attack : MonoBehaviour
 {
     public Animator playerAnimator;
+    public Animator soundGunAnimator;
     public Action OnDie = delegate { };
     public Action<GameObject> OnChoke = delegate { };
     public Action<Vector3> OnShoot = delegate { };
@@ -63,8 +64,10 @@ public class Player_Attack : MonoBehaviour
         if (Physics.Raycast(mousePoint, Camera.main.transform.forward, out hit))
         {
             Vector3 hitPoint = hit.point;
-            Debug.Log("please");
+            
             OnShoot(hitPoint);
+
+            soundGunAnimator.SetBool("Shoot", true);
         }
     }
 

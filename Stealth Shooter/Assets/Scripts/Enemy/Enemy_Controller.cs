@@ -31,7 +31,7 @@ public class Enemy_Controller : MonoBehaviour
 
     public void Choking(GameObject enemyToChoke)
     {
-        Debug.Log(this.gameObject.name);
+        
         if (this.gameObject == enemyToChoke)
         {
             if (enemyToChoke.GetComponent<Enemy_Patrol>() != null)
