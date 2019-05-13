@@ -1673,6 +1673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAnimator: {fileID: 5006220252927259934}
+  soundGunAnimator: {fileID: 0}
   nearbyEnemy: []
 --- !u!114 &5006220252927259932
 MonoBehaviour:
