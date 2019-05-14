@@ -13,6 +13,9 @@ public class Player_Attack : MonoBehaviour
     [Tooltip("List of nearby enemies to the player")]
     public List<GameObject> nearbyEnemy;
 
+    public Action OnGetSoundGun = delegate { };
+    public bool haveSoundgun = false;
+
     Vector3 mousePoint;
 
     private void Awake()
@@ -25,6 +28,15 @@ public class Player_Attack : MonoBehaviour
         nearbyEnemy = new List<GameObject>();
         playerAnimator = gameObject.GetComponent<Animator>();
 
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Enable SoundGun")
+        {
+            haveSoundgun = true;
+            OnGetSoundGun();
+        }
     }
 
     public void AddEnemy(GameObject obj)
@@ -49,9 +61,13 @@ public class Player_Attack : MonoBehaviour
             }
             
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && haveSoundgun == true)
         {
-            Shoot();
+            if (GameObject.FindWithTag("MainCamera").GetComponent<Player_RaiseGun>().isGunRaised == true)
+            {
+                Shoot();
+                StartCoroutine(StopTheGun());
+            }
         }
     }
 
@@ -71,6 +87,12 @@ public class Player_Attack : MonoBehaviour
         }
     }
 
+    IEnumerator StopTheGun()
+    {
+        yield return new WaitForSeconds(.5f);
+        soundGunAnimator.SetBool("Shoot", false);
+    }
+
     IEnumerator WaitToChoke()
     {
         OnChoke(nearbyEnemy[0]);
@@ -79,7 +101,7 @@ public class Player_Attack : MonoBehaviour
         Rigidbody playerRb = GetComponent<Rigidbody>();
         playerRb.useGravity = false;
 
-        yield return new WaitForSeconds(3.2f);
+        yield return new WaitForSeconds(.5f);
 
         playerAnimator.SetBool("ChokeEm", false);
         RemoveEnemy(nearbyEnemy[0]);

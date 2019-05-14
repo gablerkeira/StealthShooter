@@ -5,21 +5,38 @@ using UnityEngine;
 public class Player_RaiseGun : MonoBehaviour
 {
     public Animator animator;
-    bool isGunRaised = false;
+    public bool isGunRaised = false;
+    public bool haveSoundGun = false;
+    public GameObject SoundGun;
+
+    private void Awake()
+    {
+        GameObject.FindWithTag("Player").GetComponent<Player_Attack>().OnGetSoundGun += HaveSoundGun;
+    }
+
+    public void HaveSoundGun()
+    {
+        haveSoundGun = true;
+        SoundGun.SetActive(true);
+        animator.SetBool("RaiseGun", false);
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (haveSoundGun == true)
         {
-            if (isGunRaised == false)
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                animator.SetBool("RaiseGun", true);
-                isGunRaised = true;
-            }
-            else if(isGunRaised == true)
-            {
-                animator.SetBool("RaiseGun", false);
-                isGunRaised = false;
+                if (isGunRaised == false)
+                {
+                    animator.SetBool("RaiseGun", true);
+                    isGunRaised = true;
+                }
+                else if (isGunRaised == true)
+                {
+                    animator.SetBool("RaiseGun", false);
+                    isGunRaised = false;
+                }
             }
         }
     }

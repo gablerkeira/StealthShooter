@@ -104,9 +104,12 @@ public class Player_Movement : MonoBehaviour
         }
         #endregion
 
-        if (Input.GetKeyDown(KeyCode.Q) || Input.GetMouseButtonDown(0))
+        if (crouching == false)
         {
-            OnFire();
+            if (Input.GetKeyDown(KeyCode.Q) || Input.GetMouseButtonDown(0))
+            {
+                OnFire();
+            }
         }
 
         transform.position += totalForce * Time.deltaTime;

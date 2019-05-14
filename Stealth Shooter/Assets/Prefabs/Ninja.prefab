@@ -2291,7 +2291,7 @@ GameObject:
   - component: {fileID: 8916767265027897365}
   m_Layer: 0
   m_Name: EyeCamera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2486,22 +2486,22 @@ PrefabInstance:
     - target: {fileID: 643494712290631250, guid: cdbccb7c005e74a48945984c8059ecd0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.45899963
+      value: 0.6453705
       objectReference: {fileID: 0}
     - target: {fileID: 643494712290631250, guid: cdbccb7c005e74a48945984c8059ecd0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.846
+      value: -0.6288506
       objectReference: {fileID: 0}
     - target: {fileID: 643494712290631250, guid: cdbccb7c005e74a48945984c8059ecd0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.649
+      value: 0.6367319
       objectReference: {fileID: 0}
     - target: {fileID: 643494712290631250, guid: cdbccb7c005e74a48945984c8059ecd0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 9.6756455e-15
+      value: -0.00000003539025
       objectReference: {fileID: 0}
     - target: {fileID: 643494712290631250, guid: cdbccb7c005e74a48945984c8059ecd0,
         type: 3}
@@ -2511,12 +2511,12 @@ PrefabInstance:
     - target: {fileID: 643494712290631250, guid: cdbccb7c005e74a48945984c8059ecd0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00000008146034
+      value: -0.00000016391273
       objectReference: {fileID: 0}
     - target: {fileID: 643494712290631250, guid: cdbccb7c005e74a48945984c8059ecd0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.00000013315805
+      value: 0.00000010430811
       objectReference: {fileID: 0}
     - target: {fileID: 643494712290631250, guid: cdbccb7c005e74a48945984c8059ecd0,
         type: 3}
@@ -2541,17 +2541,17 @@ PrefabInstance:
     - target: {fileID: 643494712290631250, guid: cdbccb7c005e74a48945984c8059ecd0,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 14.391592
+      value: 14.391622
       objectReference: {fileID: 0}
     - target: {fileID: 643494712290631250, guid: cdbccb7c005e74a48945984c8059ecd0,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 14.391592
+      value: 14.391601
       objectReference: {fileID: 0}
     - target: {fileID: 643494712290631250, guid: cdbccb7c005e74a48945984c8059ecd0,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 14.391592
+      value: 14.391626
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdbccb7c005e74a48945984c8059ecd0, type: 3}
