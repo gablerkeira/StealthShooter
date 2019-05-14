@@ -1085,6 +1085,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 5006220252927259934}
   soundGunAnimator: {fileID: 3826066390346890937}
   nearbyEnemy: []
+  haveSoundgun: 0
 --- !u!114 &5006220252927259932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2289,6 +2290,7 @@ GameObject:
   - component: {fileID: 5006220253873673260}
   - component: {fileID: 5006220253873673263}
   - component: {fileID: 8916767265027897365}
+  - component: {fileID: 2432549204367657235}
   m_Layer: 0
   m_Name: EyeCamera
   m_TagString: MainCamera
@@ -2374,6 +2376,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 5006220253873673249}
+--- !u!114 &2432549204367657235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5006220253873673249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e18cd8cda479744fa8883281cc149ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  isGunRaised: 0
+  haveSoundGun: 0
+  SoundGun: {fileID: 0}
 --- !u!1 &5006220253935855870
 GameObject:
   m_ObjectHideFlags: 0
