@@ -69,7 +69,6 @@ ModelImporter:
     100126: mixamorig:Spine1
     100128: mixamorig:Spine2
     100130: //RootNode
-    100132: polySurface11
     400000: mixamorig:Head
     400002: mixamorig:HeadTop_End
     400004: mixamorig:Hips
@@ -136,15 +135,8 @@ ModelImporter:
     400126: mixamorig:Spine1
     400128: mixamorig:Spine2
     400130: //RootNode
-    400132: polySurface11
-    2100000: lambert4
-    2100002: lambert3
-    2100004: lambert5
-    2100006: lambert1
-    4300000: polySurface11
     7400000: mixamo.com
     9500000: //RootNode
-    13700000: polySurface11
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -176,7 +168,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 37
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1

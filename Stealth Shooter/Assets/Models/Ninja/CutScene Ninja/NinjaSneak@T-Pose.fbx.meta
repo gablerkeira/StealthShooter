@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 57793bf6cfcbed44b8b2e051cb27154c
+guid: 03e048cb586bb3d43aca033609419aaa
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -69,6 +69,7 @@ ModelImporter:
     100126: mixamorig:Spine1
     100128: mixamorig:Spine2
     100130: //RootNode
+    100132: polySurface11
     400000: mixamorig:Head
     400002: mixamorig:HeadTop_End
     400004: mixamorig:Hips
@@ -135,8 +136,15 @@ ModelImporter:
     400126: mixamorig:Spine1
     400128: mixamorig:Spine2
     400130: //RootNode
+    400132: polySurface11
+    2100000: lambert4
+    2100002: lambert3
+    2100004: lambert5
+    2100006: lambert1
+    4300000: polySurface11
     7400000: mixamo.com
     9500000: //RootNode
+    13700000: polySurface11
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -168,7 +176,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 37
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
