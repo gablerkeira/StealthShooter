@@ -13,7 +13,7 @@ public class _Menu_UI : MonoBehaviour
 
     public void _Start_Game()
     {
-        SceneManager.LoadScene("The Warehouse");
+        SceneManager.LoadScene("CutScene");
     }
 
     public void _Credit_Scene()
@@ -24,4 +24,5 @@ public class _Menu_UI : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+
 }
