@@ -17,13 +17,20 @@ public class DisplayMessage : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Message.GetComponent<Text>().enabled = true;
-        Panel.GetComponent<Image>().enabled = true;
+        if (other.gameObject.tag == "Player")
+        {
+            Message.GetComponent<Text>().enabled = true;
+            Panel.GetComponent<Image>().enabled = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Message.GetComponent<Text>().enabled = false;
-        Panel.GetComponent<Image>().enabled = false;
+        if (other.gameObject.tag == "Player")
+        {
+
+            Message.GetComponent<Text>().enabled = false;
+            Panel.GetComponent<Image>().enabled = false;
+        }
     }
 }

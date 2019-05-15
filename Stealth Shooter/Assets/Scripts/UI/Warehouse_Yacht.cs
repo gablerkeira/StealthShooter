@@ -7,6 +7,10 @@ public class Warehouse_Yacht : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("The Yacht");
+        if (other.gameObject.tag == "Player")
+        {
+
+            SceneManager.LoadScene("The Yacht");
+        }
     }
 }

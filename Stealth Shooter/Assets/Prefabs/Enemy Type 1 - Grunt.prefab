@@ -852,8 +852,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  detectionRange: 0
-  visibilityCone: 0
+  detectionRange: 1
+  visibilityCone: 1
 --- !u!114 &3971397941346364605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -901,9 +901,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 693fefe5aa60a9f4db9611bea825f985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myAgent: {fileID: 0}
-  radiusOfSound: 0
-  animator: {fileID: 0}
+  myAgent: {fileID: 3642056669344677248}
+  radiusOfSound: 1
+  animator: {fileID: 3971397941339070334}
 --- !u!114 &3665553146707966192
 MonoBehaviour:
   m_ObjectHideFlags: 0

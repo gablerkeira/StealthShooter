@@ -2511,9 +2511,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f2b8efe195c7049939e3a658ca2c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myAgent: {fileID: 0}
-  animator: {fileID: 0}
-  radiusOfSound: 0
+  myAgent: {fileID: 1718346263863525021}
+  animator: {fileID: 342115394548312022}
+  radiusOfSound: 1
 --- !u!114 &1633565387458714730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2527,8 +2527,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  detectionRange: 0
-  visibilityCone: 0
+  detectionRange: 1
+  visibilityCone: 1
 --- !u!114 &342115394548312016
 MonoBehaviour:
   m_ObjectHideFlags: 0
