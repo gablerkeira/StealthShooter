@@ -58,6 +58,7 @@ public class Player_Attack : MonoBehaviour
             {
                 playerAnimator.SetBool("ChokeEm", true);
                 StartCoroutine(WaitToChoke());
+                Debug.Log("chopped");
             }
             
         }
