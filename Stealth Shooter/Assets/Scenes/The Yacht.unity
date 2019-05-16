@@ -2852,6 +2852,21 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1580064957}
+    - target: {fileID: 211424749628489942, guid: eb170f55030a5c84ea69cc2b0d6307e4,
+        type: 3}
+      propertyPath: detectionRange
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 211424749628489942, guid: eb170f55030a5c84ea69cc2b0d6307e4,
+        type: 3}
+      propertyPath: visibilityCone
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 211424749628489942, guid: eb170f55030a5c84ea69cc2b0d6307e4,
+        type: 3}
+      propertyPath: youLose
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4969031015834258236, guid: eb170f55030a5c84ea69cc2b0d6307e4,
         type: 3}
       propertyPath: myAgent
@@ -30562,6 +30577,21 @@ PrefabInstance:
     - target: {fileID: 5644651427365611237, guid: 51f971fa22178114898138c06cf3af55,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562328940842113290, guid: 51f971fa22178114898138c06cf3af55,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653403299722445934, guid: 51f971fa22178114898138c06cf3af55,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 699835070578371006, guid: 51f971fa22178114898138c06cf3af55,
+        type: 3}
+      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
