@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class Enemy_DetectionCone : MonoBehaviour
 {
     public GameObject player;
     public float detectionRange;
     public float visibilityCone;
+    public Scene currentScene;
 
     Animator animator;
     NavMeshAgent myAgent;
@@ -20,6 +22,7 @@ public class Enemy_DetectionCone : MonoBehaviour
         }
         animator = GetComponent<Animator>();
         myAgent = GetComponent<NavMeshAgent>();
+        currentScene = SceneManager.GetActiveScene();
     }
 
     private void Update()
@@ -34,7 +37,15 @@ public class Enemy_DetectionCone : MonoBehaviour
                 animator.SetBool("Caught", true);
                 myAgent.SetDestination(transform.position);
                 GetComponent<Enemy_Patrol>().enabled = false;
+                StartCoroutine(LoadScene());
+
             }
         }
+    }
+
+    IEnumerator LoadScene()
+    {
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(currentScene.name);
     }
 }
