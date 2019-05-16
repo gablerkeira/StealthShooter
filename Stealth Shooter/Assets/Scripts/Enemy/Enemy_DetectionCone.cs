@@ -48,7 +48,7 @@ public class Enemy_DetectionCone : MonoBehaviour
 
     IEnumerator LoadScene()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(4f);
         SceneManager.LoadScene(currentScene.name);
     }
 }
