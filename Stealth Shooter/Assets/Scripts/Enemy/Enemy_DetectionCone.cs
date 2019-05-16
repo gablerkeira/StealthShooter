@@ -11,6 +11,7 @@ public class Enemy_DetectionCone : MonoBehaviour
     public float visibilityCone;
     public Scene currentScene;
 
+    public AudioSource youLose;
     Animator animator;
     NavMeshAgent myAgent;
 
@@ -23,6 +24,7 @@ public class Enemy_DetectionCone : MonoBehaviour
         animator = GetComponent<Animator>();
         myAgent = GetComponent<NavMeshAgent>();
         currentScene = SceneManager.GetActiveScene();
+        youLose = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -38,8 +40,8 @@ public class Enemy_DetectionCone : MonoBehaviour
                 myAgent.SetDestination(transform.position);
                 GetComponent<Enemy_Patrol>().enabled = false;
                 player.GetComponent<Player_Movement>().enabled = false;
+                youLose.Play();
                 StartCoroutine(LoadScene());
-
             }
         }
     }
