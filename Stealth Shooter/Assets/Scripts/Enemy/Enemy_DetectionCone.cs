@@ -37,6 +37,7 @@ public class Enemy_DetectionCone : MonoBehaviour
                 animator.SetBool("Caught", true);
                 myAgent.SetDestination(transform.position);
                 GetComponent<Enemy_Patrol>().enabled = false;
+                player.GetComponent<Player_Movement>().enabled = false;
                 StartCoroutine(LoadScene());
 
             }
