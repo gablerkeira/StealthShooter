@@ -1029,9 +1029,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "$ Lead Programmer $\n - Keira Gabler\n\n$ Sound Effects, Warehouse Level
     Designer $\n - DominiQue Johnson\n\n$ Yacht Level Designer, Voice Acting, Character
-    Creation $ \n- Triston Schroeder\n\n$ Particle Systems - Unity's Particle Pack
-    $\n$ All Textures Used Are From Free, Non-Profit Sources $\n$ Animations Curated
-    From Mixamo.com $"
+    Creation, Cutscene Director $ \n- Triston Schroeder\n\n$ Particle Systems - Unity's
+    Particle Pack $\n$ All Textures Used Are From Free, Non-Profit Sources $\n$ Animations
+    Curated From Mixamo.com $"
 --- !u!222 &1890198759
 CanvasRenderer:
   m_ObjectHideFlags: 0
