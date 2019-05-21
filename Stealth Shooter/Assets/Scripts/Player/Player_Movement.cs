@@ -40,9 +40,6 @@ public class Player_Movement : MonoBehaviour
         mainCamera.gameObject.SetActive(true);
 
         tpCamera.gameObject.SetActive(false);
-        playerAnimator.SetBool("SneakAnim", false);
-
-
     }
 
     void Update()
@@ -74,6 +71,11 @@ public class Player_Movement : MonoBehaviour
             {
                 crouching = true;
             }
+        }
+
+        if (crouching == false && playerAnimator.GetBool("SneakAnim") == true)
+        {
+            playerAnimator.SetBool("SneakAnim", false);
         }
 
         if (crouching)
