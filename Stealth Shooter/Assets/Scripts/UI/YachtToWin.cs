@@ -5,10 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class YachtToWin : MonoBehaviour
 {
-    // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("Win Scene");
+        SceneManager.LoadScene("FinalCutScene");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
