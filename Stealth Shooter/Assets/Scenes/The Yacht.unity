@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 257309530}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2867,6 +2867,11 @@ PrefabInstance:
       propertyPath: youLose
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 211424749628489942, guid: eb170f55030a5c84ea69cc2b0d6307e4,
+        type: 3}
+      propertyPath: youLosePanel
+      value: 
+      objectReference: {fileID: 783517491}
     - target: {fileID: 4969031015834258236, guid: eb170f55030a5c84ea69cc2b0d6307e4,
         type: 3}
       propertyPath: myAgent
@@ -6753,7 +6758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c1d1d360caf10814dbeab03e7827e7f0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c1d1d360caf10814dbeab03e7827e7f0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11579,6 +11584,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.20141125, y: 2.6799998, z: 2.01}
   m_Center: {x: 7.805705, y: 1.3399999, z: 0.66999996}
+--- !u!1 &783517491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1653403299722445934, guid: 51f971fa22178114898138c06cf3af55,
+    type: 3}
+  m_PrefabInstance: {fileID: 2006844132}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &788022313
 GameObject:
   m_ObjectHideFlags: 0
@@ -12512,6 +12523,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 439675656}
     m_Modifications:
+    - target: {fileID: 877355628, guid: d13e65c33f0ca72499d1b8a45c71e611, type: 3}
+      propertyPath: m_Name
+      value: Door
+      objectReference: {fileID: 0}
     - target: {fileID: 877355627, guid: d13e65c33f0ca72499d1b8a45c71e611, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.33
@@ -12555,10 +12570,6 @@ PrefabInstance:
     - target: {fileID: 877355627, guid: d13e65c33f0ca72499d1b8a45c71e611, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 877355628, guid: d13e65c33f0ca72499d1b8a45c71e611, type: 3}
-      propertyPath: m_Name
-      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 1512835034742085558, guid: d13e65c33f0ca72499d1b8a45c71e611,
         type: 3}
@@ -12924,7 +12935,12 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1580064957}
+    - target: {fileID: 211424749628489942, guid: eb170f55030a5c84ea69cc2b0d6307e4,
+        type: 3}
+      propertyPath: youLosePanel
+      value: 
+      objectReference: {fileID: 783517491}
     - target: {fileID: 4969031015834258236, guid: eb170f55030a5c84ea69cc2b0d6307e4,
         type: 3}
       propertyPath: myAgent
@@ -15347,6 +15363,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 772657698}
     m_Modifications:
+    - target: {fileID: 877355628, guid: d13e65c33f0ca72499d1b8a45c71e611, type: 3}
+      propertyPath: m_Name
+      value: Door (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 877355627, guid: d13e65c33f0ca72499d1b8a45c71e611, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.8826005
@@ -15398,10 +15418,6 @@ PrefabInstance:
     - target: {fileID: 877355627, guid: d13e65c33f0ca72499d1b8a45c71e611, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 877355628, guid: d13e65c33f0ca72499d1b8a45c71e611, type: 3}
-      propertyPath: m_Name
-      value: Door (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1512835034742085558, guid: d13e65c33f0ca72499d1b8a45c71e611,
         type: 3}
@@ -25196,7 +25212,12 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1580064957}
+    - target: {fileID: 211424749628489942, guid: eb170f55030a5c84ea69cc2b0d6307e4,
+        type: 3}
+      propertyPath: youLosePanel
+      value: 
+      objectReference: {fileID: 783517491}
     - target: {fileID: 4969031015834258236, guid: eb170f55030a5c84ea69cc2b0d6307e4,
         type: 3}
       propertyPath: myAgent
@@ -28500,6 +28521,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443531908}
     m_Modifications:
+    - target: {fileID: 877355628, guid: d13e65c33f0ca72499d1b8a45c71e611, type: 3}
+      propertyPath: m_Name
+      value: Door (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 877355627, guid: d13e65c33f0ca72499d1b8a45c71e611, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.699887
@@ -28551,10 +28576,6 @@ PrefabInstance:
     - target: {fileID: 877355627, guid: d13e65c33f0ca72499d1b8a45c71e611, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 877355628, guid: d13e65c33f0ca72499d1b8a45c71e611, type: 3}
-      propertyPath: m_Name
-      value: Door (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1512835034742085558, guid: d13e65c33f0ca72499d1b8a45c71e611,
         type: 3}
@@ -31535,7 +31556,12 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1580064957}
+    - target: {fileID: 1633565387458714730, guid: 7179a5a49925a7b4a9f1682e661a5038,
+        type: 3}
+      propertyPath: youLosePanel
+      value: 
+      objectReference: {fileID: 783517491}
     - target: {fileID: 3665054280531096275, guid: 7179a5a49925a7b4a9f1682e661a5038,
         type: 3}
       propertyPath: animator
@@ -34509,6 +34535,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1653403299722445934, guid: 51f971fa22178114898138c06cf3af55,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5644651427365611237, guid: 51f971fa22178114898138c06cf3af55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34618,11 +34649,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1653403299722445934, guid: 51f971fa22178114898138c06cf3af55,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 699835070578371006, guid: 51f971fa22178114898138c06cf3af55,
         type: 3}

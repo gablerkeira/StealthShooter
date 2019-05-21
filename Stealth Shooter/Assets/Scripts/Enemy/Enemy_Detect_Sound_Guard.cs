@@ -18,26 +18,32 @@ public class Enemy_Detect_Sound_Guard : MonoBehaviour, IEnemy_Detect_Sound
 
     public void GoToPoint(Vector3 waypointPosition)
     {
-        if (Vector3.Distance(transform.position, waypointPosition) <= radiusOfSound)
+        if (myAgent != null)
         {
-            animator.SetBool("Walk", true);
-            myAgent.SetDestination(waypointPosition);
-            StartCoroutine(StopAtSound());
+            if (Vector3.Distance(transform.position, waypointPosition) <= radiusOfSound)
+            {
+                animator.SetBool("Walk", true);
+                myAgent.SetDestination(waypointPosition);
+                StartCoroutine(StopAtSound());
+            }
         }
     }
 
     IEnumerator StopAtSound()
     {
-        while (Vector3.Distance(myAgent.transform.position, myAgent.destination) > 1)
+        if (myAgent != null)
         {
-            yield return null;
-        }
+            while (Vector3.Distance(myAgent.transform.position, myAgent.destination) > 1)
+            {
+                yield return null;
+            }
 
-        myAgent.isStopped = true;
-        animator.SetBool("Walk", false);
-        yield return new WaitForSeconds(5f);
-        myAgent.isStopped = false;
-        myAgent.SetDestination(originalPosition);
+            myAgent.isStopped = true;
+            animator.SetBool("Walk", false);
+            yield return new WaitForSeconds(5f);
+            myAgent.isStopped = false;
+            myAgent.SetDestination(originalPosition);
+        }
     }
 
     private void OnDestroy()
