@@ -95,7 +95,10 @@ public class Player_Attack : MonoBehaviour
 
     IEnumerator WaitToChoke()
     {
-        OnChoke(nearbyEnemy[0]);
+        if (nearbyEnemy[0] != null)
+        {
+            OnChoke(nearbyEnemy[0]);
+        }
         Collider playerCol = GetComponent<Collider>();
         playerCol.isTrigger = true;
         Rigidbody playerRb = GetComponent<Rigidbody>();

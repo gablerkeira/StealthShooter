@@ -83,14 +83,16 @@ public class Player_Movement : MonoBehaviour
 
             mainCamera.gameObject.SetActive(false);
             tpCamera.gameObject.SetActive(true);
-
-            if (Input.anyKey == false)
+            if (crouching == true)
             {
-                playerAnimator.SetBool("SneakAnim", false);
-            }
-            else if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-            {
-                playerAnimator.SetBool("SneakAnim", true);
+                if (Input.anyKey == false)
+                {
+                    playerAnimator.SetBool("SneakAnim", false);
+                }
+                else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+                {
+                    playerAnimator.SetBool("SneakAnim", true);
+                }
             }
         }
         else

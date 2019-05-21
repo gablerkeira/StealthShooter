@@ -9,5 +9,7 @@ public class YachtToWin : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         SceneManager.LoadScene("Win Scene");
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
