@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 1, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -682,7 +682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 1, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1007,7 +1007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1019,7 +1019,7 @@ MonoBehaviour:
     m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1027,23 +1027,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '$ Particle Systems - Unity''s Particle Pack $
-
-    $ Lead Programmer - Keira Gabler $
-
-    $ Warehouse Level Designer - DominiQue Johnson $
-
-    $ Yacht Level Designer - Triston Schroeder $
-
-    $ Merge Conflict Creator - Triston Schroeder $
-
-    $ Sound Effects - DominiQue Johnson $
-
-    $ Voice Acting - Triston Schroeder $
-
-    $ All Textures Used Are From Free, Non-Profit Sources $
-
-    $ Animations Curated From Mixamo.com $'
+  m_Text: "$ Lead Programmer $\n - Keira Gabler\n\n$ Sound Effects, Warehouse Level
+    Designer $\n - DominiQue Johnson\n\n$ Yacht Level Designer, Voice Acting, Character
+    Creation $ \n- Triston Schroeder\n\n$ Particle Systems - Unity's Particle Pack
+    $\n$ All Textures Used Are From Free, Non-Profit Sources $\n$ Animations Curated
+    From Mixamo.com $"
 --- !u!222 &1890198759
 CanvasRenderer:
   m_ObjectHideFlags: 0
