@@ -40,6 +40,8 @@ public class Player_Movement : MonoBehaviour
         mainCamera.gameObject.SetActive(true);
 
         tpCamera.gameObject.SetActive(false);
+        playerAnimator.SetBool("SneakAnim", false);
+
 
     }
 

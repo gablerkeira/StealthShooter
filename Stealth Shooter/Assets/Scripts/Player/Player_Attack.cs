@@ -56,6 +56,7 @@ public class Player_Attack : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
+                playerAnimator.SetBool("SneakAnim", false);
                 playerAnimator.SetBool("ChokeEm", true);
                 StartCoroutine(WaitToChoke());
             }
