@@ -15,9 +15,4 @@ public class _Level_Manager : MonoBehaviour
     {
         return lastLevel;
     }
-
-    public static void _changeToPreviousLevel()
-    {
-
-    }
 }
