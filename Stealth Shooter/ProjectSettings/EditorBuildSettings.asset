@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/The Yacht.unity
     guid: 0f255c574f8dcf147bf5cfbde5b455d3
   - enabled: 1
+    path: Assets/Scenes/FinalCutScene.unity
+    guid: bc9adc710f1502948863aa1cc12c179d
+  - enabled: 1
     path: Assets/Scenes/Fail Scene.unity
     guid: 8104a9d69c5d1e042bad259b81abd43b
   - enabled: 1
